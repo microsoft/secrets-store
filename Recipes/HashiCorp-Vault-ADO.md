@@ -23,8 +23,6 @@ If in your solution, you would like to use hosted agents or private agents not r
 
 The example below uses Azure DevOps [Generic Service Connection](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#generic-service-connection) to store AppRole access details to the Vault, and community extension ([Authenticated Scripts](https://marketplace.visualstudio.com/items?itemName=cloudpup.authenticated-scripts)) to utilize Generic Service Connection data inside a Bash script.
 
-{% raw %}
-
 ```yaml
 trigger:
   - main
@@ -67,16 +65,12 @@ steps:
     displayName: Login to Docker Registry
 ```
 
-{% endraw %}
-
 The script below will bootstrap your environment with an example configuration that is required for the above Azure Pipelines.
 
 - Vault configuration with a AppRole auth
 - Vault KVv2 store with examples secrets
 - Azure DevOps extensions setup
 - Azure DevOps Generic Service Connection setup
-
-{% raw %}
 
 ```bash
 #!/bin/bash
@@ -180,8 +174,6 @@ setup_vault_secrets_engine
 setup_vault_approle
 setup_ado_service_connection
 ```
-
-{% endraw %}
 
 > **NOTE**
 >

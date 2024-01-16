@@ -24,8 +24,6 @@ Official GitHub documentation contains an example configuration[^2], but in some
 [^2]: [Configuring OpenID Connect in HashiCorp Vault
 ](https://docs.github.com/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-hashicorp-vault)
 
-{% raw %}
-
 ```yaml
 name: Example HashiCorp Vault flow
 
@@ -89,11 +87,7 @@ jobs:
           images: "myregistry.azurecr.io/myapp:${{ github.sha }}"
 ```
 
-{% endraw %}
-
 The script below will bootstrap your Vault configuration with a basic setup (OIDC GitHub auth for HashiCorp Vault Action) to use with GitHub Workflow above.
-
-{% raw %}
 
 ```bash
 #!/bin/bash
@@ -144,8 +138,6 @@ vault write auth/github/role/github-role - <<EOF
 }
 EOF
 ```
-
-{% endraw %}
 
 > **NOTE**
 >

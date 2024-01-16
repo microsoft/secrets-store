@@ -21,8 +21,6 @@ Official GitHub Action for getting secrets form Key Vault exists[^1] but is depr
 
 Follow the documentation with an example of using Azure Key Vault in your GitHub Workflow: [Use Key Vault secrets in GitHub Actions workflows](https://learn.microsoft.com/azure/developer/github/github-key-vault) with one exception. Documentation shows an example workflow with the deprecated Azure Key Vault Action mentioned above. Instead of providing the YAML code from docs, use the below with Azure CLI Action.
 
-{% raw %}
-
 ```yaml
 name: Example Key Vault flow
 
@@ -83,8 +81,6 @@ jobs:
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: "myregistry.azurecr.io/myapp:${{ github.sha }}"
 ```
-
-{% endraw %}
 
 > **NOTE**
 >

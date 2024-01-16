@@ -1,21 +1,10 @@
----
-tags:
-  - Secrets Store
-  - Secrets Storage
-  - Keys Store
-  - Keys Storage
-  - Security
----
-
 # Secrets Store
-
-## Overview
 
 A secrets store is a secure location for storing your project's secrets and making them available as required to various parts of a project. This may include usage in apps, services, APIs, or deployment processes.
 
 ## Problem Statement
 
-Almost every application is part of a larger ecosystem that connects with other services like databases, APIs, etc. Before the "Secure Secret Store" era, secrets used for connection to other services were stored in code, configuration files, initialization parameters, version control repositories, external files, databases, etc. That approach experiences "Secrets Sprawl", and refers to when an organization stores secrets in many different places without access control, audit, logging, and many cases without encryption.
+Almost every application is part of a larger ecosystem that connects with other services like databases, APIs, etc. Before the "Secure Secret Store" era, secrets used for connection to other services were stored in code, configuration files, initialization parameters, version control repositories, external files, databases, etc. That approach experiences "Secrets Sprawl", which refers the state in an organization where secrets are stored in many different places without access control, audit, logging, and many cases without encryption.
 
 ## Solution
 
@@ -50,3 +39,23 @@ The links below will direct you to implementation examples that showcase common 
 - [GitHub Encrypted Secrets usage examples with GitHub Workflows](Recipes/GitHub-Encrypted-Secrets.md)
 - [Secure Files usage examples with Azure DevOps Pipelines](Recipes/Secure-Files-ADO.md)
 - [Azure Key Vault usage examples with Edge Kubernetes Clusters](Recipes/Azure-KeyVault-Kubernetes.md)
+
+## Contributing
+
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit <https://cla.opensource.microsoft.com>.
+
+When you submit a pull request, a CLA bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Trademarks
+
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
+Any use of third-party trademarks or logos are subject to those third-party's policies.
