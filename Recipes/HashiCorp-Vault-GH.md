@@ -1,16 +1,3 @@
----
-summary: HashiCorp Vault usage examples with GitHub Workflows
-authors:
-  - Dariusz Porowski
-date: 2022-11-30
-tags:
-  - HashiCorp
-  - Vault
-  - Secrets Store
-  - GitHub Workflows
-  - Security
----
-
 # HashiCorp Vault and GitHub
 
 Official GitHub Action for getting secrets from HashiCorp Vault exists[^1], and this example shows you how to retrieve and use secrets in your GitHub Workflow.

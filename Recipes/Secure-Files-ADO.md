@@ -1,15 +1,3 @@
----
-summary: Secure Files usage examples with Azure DevOps Pipelines
-authors:
-  - Dariusz Porowski
-date: 2022-11-29
-tags:
-  - Secure Files
-  - Secrets Store
-  - Azure Pipelines
-  - Security
----
-
 # Azure DevOps Secure Files
 
 Secure files allow you to store files you can share across pipelines. Use the Secure Files library to store files like:
