@@ -1,16 +1,3 @@
----
-summary: Azure Key Vault usage examples with GitHub Workflows
-authors:
-  - Dariusz Porowski
-date: 2022-11-29
-tags:
-  - Azure Key Vault
-  - Key Vault
-  - Secrets Store
-  - GitHub Workflows
-  - Security
----
-
 # Key Vault and GitHub
 
 Official GitHub Action for getting secrets form Key Vault exists[^1] but is deprecated. The recommended alternative is to use the [Azure CLI Action](https://github.com/marketplace/actions/azure-cli-action) and pass a custom script to access Azure Key Vault.
