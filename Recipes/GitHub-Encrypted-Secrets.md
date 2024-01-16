@@ -1,15 +1,3 @@
----
-summary: GitHub Encrypted Secrets usage examples with GitHub Workflows
-authors:
-  - Dariusz Porowski
-date: 2022-11-30
-tags:
-  - GitHub Encrypted Secrets
-  - Secrets Store
-  - GitHub Workflows
-  - Security
----
-
 # GitHub Encrypted Secrets and GitHub
 
 Encrypted Secrets allow you to store sensitive information in your organization, repository, or repository environments. Secrets are represented as environment variables.

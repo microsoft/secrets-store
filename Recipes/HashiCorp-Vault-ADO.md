@@ -1,16 +1,3 @@
----
-summary: HashiCorp Vault usage examples with Azure DevOps
-authors:
-  - Dariusz Porowski
-date: 2022-12-29
-tags:
-  - HashiCorp
-  - Vault
-  - Secrets Store
-  - Azure DevOps
-  - Security
----
-
 # HashiCorp Vault and Azure DevOps
 
 In the absence of the official Azure DevOps Tasks Extension, the preferred integration method is Azure Auth Method - it allows authentication against Vault using [Azure Managed Service Identity (MSI)](https://learn.microsoft.com/en-us/azure/active-directory/managed-service-identity/overview). This method supports authentication for System-assigned and User-assigned managed identities. The limitation of this method is it's only available to private Azure DevOps agents running on Azure. Configuration for this scenario is pretty well documented on HashiCorp sites. Please follow this guide: [Azure Auth Method](https://developer.hashicorp.com/vault/docs/auth/azure).

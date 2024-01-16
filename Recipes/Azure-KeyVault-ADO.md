@@ -1,16 +1,3 @@
----
-summary: Azure Key Vault usage examples with Azure DevOps Pipelines
-authors:
-  - Dariusz Porowski
-date: 2022-11-29
-tags:
-  - Azure Key Vault
-  - Key Vault
-  - Secrets Store
-  - Azure Pipelines
-  - Security
----
-
 # Key Vault and Azure DevOps
 
 Two common scenarios exist for Key Vault usage in Azure Pipelines. Directly in the pipeline or with [Variable Groups](https://learn.microsoft.com/azure/devops/pipelines/library/variable-groups) as a proxy to Kay Vault. The most significant difference between them is reusability. It's a factor that determines your choice.
