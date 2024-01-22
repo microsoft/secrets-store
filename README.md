@@ -8,12 +8,14 @@ Almost every application is part of a larger ecosystem that connects with other 
 
 ## Solution
 
-The best practice is not to include secrets in source code and to make sure not to store secrets in source control. All sensitive pieces of configuration should be kept in a secure place in a managed way. The Secret Store solves the problem and additionally brings many benefits such as:
+Secrets should not to be include in source code, nor checked into git. All sensitive pieces of configuration should be kept in a secure, managed secrets store. Benefits include:
 
-- encryption/decryption when used
-- audit/logging - who accessed the secret and when
-- a central place storing secrets, keys, or certificates to support long-term scalability
-- easy access to automation like DevOps workflows to eliminate certain users' dependencies
+- Centralized location for storing secrets, keys, and certificates.
+- Long-term scalability of storage location.
+- Automatic encryption when stored and decription when retrieved.
+- Enabling automated logging when secrets are stored and used, and by whom.
+- Secure access from DevOps workflows and automation as required.
+- Removes dependency on direct access to secrets during development and in production.
 
 ## Tool Selection Matrix
 
